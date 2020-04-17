@@ -39,19 +39,6 @@ Jest and Babel.
 JS classes
 
 
-
-1- Assuming we are making a webPage too, the user would have to input his age in the World and life expectancy. And will recieve back 4 planet ages plus how many years left or how many years he is already completed beyond expectancy. function inside the class would determine which is the case for the second output.
-
-2- class would be passed age and life expectancy thru constructors.
-3- Code function "plAgesExpects" that calculates planet age and expectancy on each planet when world age and World expectancy is passed to it.
-4- Code function "yearsLeftPassed" that calculates years left or passed beyond expectancy on each planet. It returns a string whether "yearsLeft" or "yearsOverlived" and the corresponding value.
-
-1- test function yearsLeftPassed whether results are ok on received. pass ages and expectancies on new planets directly
-2- test function plAgesExpects by passing World age and World Expectancy directly to the constructors.
-3- Make them fail by having different results.
-
-
-
 ## Specs Input
 | Spec | Input | result |
 | :-------------  | :-----------------------------------------------------| :----------------------------------------|
