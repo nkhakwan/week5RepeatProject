@@ -42,6 +42,10 @@ JS classes
 3- Code function "plAgesExpects" that calculates planet age and expectancy on each planet when world age and World expectancy is passed to it.
 4- Code function "yearsLeftPassed" that calculates years left or passed beyond expectancy on each planet. It returns a string whether "yearsLeft" or "yearsOverlived" and the corresponding value.
 
+1- test function yearsLeftPassed whether results are ok on received. pass ages and expectancies on new planets directly
+2- test function plAgesExpects by passing World age and World Expectancy directly to the constructors.
+3- Make them fail by having different results.
+
 
 
 ### Specs Input
