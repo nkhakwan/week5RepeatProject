@@ -10,15 +10,18 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import './styles.css';
 
 
-var ageCalculator = new AgeCalculator(24, 79);
+
 $(document).ready(function() {
   $("form").submit(function(event){
     event.preventDefault();
     var yourAge = parseInt($("#yourAge").val());
     var expectancy  = parseInt($("#expectancy").val());
     //var vegType   = parseInt($("#veg").val());
-    ageCalculator(yourAge, expectancy);
-   $("#yourResults").html(ageCalculator.plAgesExpects());
+    var ageCalculator = new (yourAge, expectancy);
+    var OurResult = ageCalculator.plAgesExpects()
+
+    ["416 833 left Mercury", "161 322 left Venus", "53 106 left Mars", "8 16 left Jupiter"]
+   $("#yourResults").text(OurResult[0] + " " +OurResult[1]);
   });
 });
 

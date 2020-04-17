@@ -9,14 +9,14 @@ export class AgeCalculator {
     let expectancies = [];
     ages.push(this.age/.24);
     ages.push(this.age/.62);
-    ages.push(this.age/1.8);
+    ages.push(this.age/1.88);
     ages.push(this.age/11.86);
     expectancies.push (this.expect/.24);
     expectancies.push(this.expect/.62);
     expectancies.push(this.expect/1.88);
     expectancies.push(this.expect/11.86);
-    console.log(ages);
-    console.log(expectancies);
+    //console.log(ages);
+    //console.log(expectancies);
     let ageOutput = [];
     let partialResult = this.yearsLeftPassed(ages, expectancies);
     for( let i =0; i<ages.length; i =i +1){
