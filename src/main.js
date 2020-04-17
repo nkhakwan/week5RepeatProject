@@ -3,25 +3,22 @@
 //import { Jelly } from './jelly.js'
 //import { Bread } from './bread.js'
 //import '../css/styles.css'
-import './styles.css';
-import { PizzaOrders } from './pizza';
+import { AgeCalculator } from './ageCalculate.js';
 import $ from 'jquery';
 import 'bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './styles.css';
 
 
-var pizzaOrder = new PizzaOrders();
+var ageCalculator = new AgeCalculator(24, 79);
 $(document).ready(function() {
-  displayOrderDetails(pizzaOrder.size, pizzaOrder.toppingOne, pizzaOrder.toppingTwo);
   $("form").submit(function(event){
     event.preventDefault();
-    var pizzaSize = parseInt($("#size").val());
-    var meatType  = parseInt($("#meat").val());
-    var vegType   = parseInt($("#veg").val());
-    pizzaOrder.addOrder(meatType,vegType,pizzaSize);
-   $("#cost").html(pizzaOrder.orderPrice[pizzaOrder.id]);
-   
+    var yourAge = parseInt($("#yourAge").val());
+    var expectancy  = parseInt($("#expectancy").val());
+    //var vegType   = parseInt($("#veg").val());
+    ageCalculator(yourAge, expectancy);
+   $("#yourResults").html(ageCalculator.plAgesExpects());
   });
 });
 

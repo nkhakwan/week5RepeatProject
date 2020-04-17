@@ -1,6 +1,6 @@
-import { DayCalculate } from './../src/dayCalculate.js';
+import { AgeCalculator } from './../src/ageCalculate.js';
 
-describe('DayCalculate', () => {
+describe('ageCalculate', () => {
   var dayCalculate;
 
   // beforeEach(() => {
