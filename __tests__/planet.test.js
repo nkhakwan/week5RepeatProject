@@ -13,7 +13,7 @@ describe('ageCalculator', () => {
  // });
 
   test('should test whether our number of days are correct', () => { 
-    ageCalculator = new AgeCalculator(85,79);
+    ageCalculator = new AgeCalculator(79, 90);
     expect(ageCalculator.plAgesExpects()).toEqual("nothing");
   });
 

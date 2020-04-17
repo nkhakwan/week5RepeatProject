@@ -20,7 +20,7 @@ export class AgeCalculator {
     let ageOutput = [];
     let partialResult = this.yearsLeftPassed(ages, expectancies);
     for( let i =0; i<ages.length; i =i +1){
-      ageOutput[i]= `${ages[i]} is your age and , ${partialResult[0][i]}, ,${partialResult[1][i]}`;
+      ageOutput[i]= `${Math.floor(ages[i])} ${partialResult[0][i]} ${partialResult[1][i]}`;
     }
     return ageOutput;
   }
@@ -31,11 +31,11 @@ export class AgeCalculator {
     for (let i=0; i<ages.length; i=i+1){
       let yearDiff = expectancies[i]- ages[i];
       if (yearDiff >=0 ){
-        diffPhrase[0][i] = yearDiff;
-        diffPhrase[1][i] = `years left on planet ${planet[i]}`;
+        diffPhrase[0][i] = Math.floor(yearDiff);
+        diffPhrase[1][i] = `left ${planet[i]}`;
       } else {
-        diffPhrase[0][i] = yearDiff;
-        diffPhrase[1][i] = `years Overlived on ${planet[i]}`;
+        diffPhrase[0][i] = Math.floor(Math.abs(yearDiff));
+        diffPhrase[1][i] = `Overlived ${planet[i]}`;
         }
     } 
     return diffPhrase;
