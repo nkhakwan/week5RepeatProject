@@ -48,3 +48,9 @@ describe('ageCalculator', () => {
     expect(ageCalculator.plAgesExpects()).toEqual(["1250 833 Overlived Mercury", "483 322 Overlived Venus", "159 106 Overlived Mars", "25 16 Overlived Jupiter"]);
   });
 });
+
+//// new test being added for a Repeat project to show red green refactoring
+test('should test whether the ages past to a function has been doubled or not', () => { 
+  ageCalculator = new AgeCalculator(24,104);
+  expect(ageCalculator.ageDoubler([10, 8, 6, 1])).toEqual([20,16,12,2]);
+});
