@@ -15,6 +15,7 @@ export class AgeCalculator {
     expectancies.push(this.expect/.62);
     expectancies.push(this.expect/1.88);
     expectancies.push(this.expect/11.86);
+    let notToBeUsed = this.ageDoubler(ages);
     //console.log(ages);
     //console.log(expectancies);
     let ageOutput = [];
@@ -41,4 +42,11 @@ export class AgeCalculator {
     return diffPhrase;
   }
  
+  ageDoubler(ages){
+    let doubleAge = [];
+   for (let i=0; i<ages.length; i=i+1){
+     doubleAge[i] = ages[i]*2;
+   }
+   return doubleAge;
+  }
 }
