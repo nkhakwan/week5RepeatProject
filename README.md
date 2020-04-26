@@ -1,8 +1,8 @@
 # _Planet Age Calculator_
 
-#### _Epicodus Week 5 Project_
+#### _Epicodus Week 5 Repeat Project_
 
-#### By _**KhaanSahab**_
+#### By _**KhanSahab**_
 
 ## Description
 
@@ -58,6 +58,7 @@ JS classes
 ##### Test Input to class constructors with age **More** than expectancy : "ageCalculator = new AgeCalculator(90, 79);"
 ##### Test Output from method ageCalculator.plAgesExpects(): ["375 45 Overlived Mercury", "145 17 Overlived Venus", "47 5 Overlived Mars", "7 0 Overlived Jupiter"]
 ###### Explanation: Output shows number of years, numbers of years _**Overlived**_ and _not_ less on each planet.
+# Test type 4 _Test written at the end of __tests__/planet.test.js for repeat submission. This final test was commited when the test was failing but the specs it needed to test were not yet coded. Finally the specs were coded and the test started passing. It just checks whether the newly written code is doubling the planet ages.
 
 
 
